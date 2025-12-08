@@ -1,9 +1,8 @@
-#include "binary_trees.h"
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
-#include <stddef.h>
 #include <string.h>
+#include "binary_trees.h"
+/* Original code from http://stackoverflow.com/a/13755911/5184480 */
 /**
 * print_t - Stores recursively each level in an array of strings
 *
@@ -41,12 +40,12 @@ s[depth - 1][offset + left + width / 2] = '.';
 return (left + width + right);
 }
 /**
-* _height - Measures the height of a binary tree
-*
-* @tree: Pointer to the node to measures the height
-*
-* Return: The height of the tree starting at @node
-*/
+ * _height - Measures the height of a binary tree
+ *
+ * @tree: Pointer to the node to measures the height
+ *
+ * Return: The height of the tree starting at @node
+ */
 static size_t _height(const binary_tree_t *tree)
 {
 size_t height_l;
@@ -56,10 +55,10 @@ height_r = tree->right ? 1 + _height(tree->right) : 0;
 return (height_l > height_r ? height_l : height_r);
 }
 /**
-* binary_tree_print - print the binary tree
-* @tree: pointer to binary of tree
-* Return: value binary of tree
-*/
+ * binary_tree_print - Prints a binary tree
+ *
+ * @tree: Pointer to the root node of the tree to print
+ */
 void binary_tree_print(const binary_tree_t *tree)
 {
 char **s;
