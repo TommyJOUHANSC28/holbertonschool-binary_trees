@@ -16,7 +16,7 @@ tree = tree->left;
 tree->parent = NULL;
 if (tree->right)
 {
-temp->left = tree->left;
+temp->left = tree->right;
 tree->right->parent = temp;
 }
 else
