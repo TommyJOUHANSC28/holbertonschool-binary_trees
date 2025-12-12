@@ -2,9 +2,9 @@
 /**
 * binary_tree_is_bst -  function that checks if a binary
 *                       tree is a valid Binary Search Tree
-* @tree - pointer to the root node
+* @tree: pointer to the root node
 * Return: 0 if tree is NULL
-* Return: 1 if tree is a valid BST
+*          1 if tree is a valid BST
 */
 int binary_tree_is_bst(const binary_tree_t *tree)
 {
