@@ -28,9 +28,9 @@ temp = root->left;
 free(root);
 return (temp);
 }
-temp = bst_min_val(root->right);
+temp = bst_min_val(root->left);
 root->n = temp->n;
-root->right = bst_remove(root->right, temp->n);
+root->left = bst_remove(root->left, temp->n);
 }
 return (root);
 }
