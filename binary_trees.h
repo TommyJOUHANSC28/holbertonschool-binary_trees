@@ -88,5 +88,8 @@ bst_t *bst_min_val(bst_t *root);
 int btia_helper(const binary_tree_t *tree, int low, int hi);
 int btih_helper(const binary_tree_t *tree);
 void sata_helper(avl_t **root, int *array, size_t lo, size_t hi);
-
+void heapify_down(heap_t *node);
+heap_t *get_last_node(heap_t *root);
+int heap_extract(heap_t **root);
+heap_t *heap_insert(heap_t **root, int value);
 #endif
